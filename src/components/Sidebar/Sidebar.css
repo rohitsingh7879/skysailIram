@@ -1,9 +1,7 @@
 .sidebar {
   width: 20%;
   background-color: #E0DFFE;
-  height: 70vh;
-  margin-bottom: 10px;
-  z-index: 1;
+  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {

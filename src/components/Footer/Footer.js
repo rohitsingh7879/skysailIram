@@ -1,12 +1,17 @@
 import React from 'react';
 import './Footer.css';
+import logo from '../assets/image.png';
+
 import { Facebook, Instagram } from '@mui/icons-material';
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <div className="footer-left">
-          <img src="/path-to-your-logo.png" alt="Logo" className="footer-logo" />
+      <div className="footer-left">
+      <img src={logo} height={200} style={{ borderRadius: '20px' }} alt="logo"/>
+      <p>Petal And Prosper</p>
+      <br />
+      <p>Address Lorem ipsum dolor.</p>
           <p>© Copyright Petal And Prosper</p>
         </div>
         <div className="footer-center">
@@ -32,6 +37,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+
   );
 };
 
