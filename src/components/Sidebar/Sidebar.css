@@ -1,0 +1,25 @@
+.sidebar {
+  width: 20%;
+  background-color: #E0DFFE;
+  height: 70vh;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100px;
+  }
+  .list-item-text {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 60px;
+  }
+  .list-item-text {
+    display: none;
+  }
+}

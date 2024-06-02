@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { CssBaseline, Box, Toolbar} from '@mui/material';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Sidebar from './components/Sidebar/Sidebar';
+import ContentPage from './components/ContentPage/ContentPage';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <Box>
+    <Box >
+      <CssBaseline />
+      <Header />
+      <Sidebar />
+      <Box component="main" sx={{ flexGrow: 1, p: 3, ml: 30 }}>
+        <Toolbar />
+        <ContentPage />
+      </Box>
+    </Box>
+    <Footer />
+   </Box>
+    </>
   );
-}
+};
 
 export default App;
